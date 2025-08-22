@@ -1,7 +1,34 @@
-# Prediction-of-Wine-Type-and-Quality
+# Prediction of Wine Type and Quality
 
-This project examines the application of Deep Learning techniques in classifying and predicting the quality of wines based on their physicochemical properties. The dataset contains features such as fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, sulphur dioxide levels, density, pH, sulphates, alcohol content, and quality. We add an additional column labeled 'type', which indicates 0 and 1 for white and red wine, respectively.
-We use an Artificial Neural Network (ANN) model, specifically a Feedforward Neural Network (FNN) model, to accurately classify wines as red or white. In addition, regression models—including both traditional Machine Learning algorithms and Deep Learning architectures—were employed to predict wine quality scores. While the classification model achieved high accuracy, the regression models, such as Linear Regression, XGBoost, Random Forest and Gradient Boosting Regressor, faced challenges in capturing the complex patterns of quality assessment, with moderate R² scores. 
-The study highlights the effectiveness of deep learning in classification tasks and the limitations encountered in predicting subjective quality using physicochemical data alone. This dual-approach project offers insights into modeling strategies for both categorical and continuous wine-related outcomes.
+## Overview
+This project examines the application of Deep Learning techniques in classifying and predicting the quality of wines based on their physicochemical properties. The dataset includes features such as fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, sulphur dioxide levels, density, pH, sulphates, alcohol content, and quality. An additional column, `type`, indicates 0 and 1 for white and red wine, respectively.
 
-The dataset used in this project is based on the publicly available Wine Quality dataset from the UCI Machine Learning Repository. Some versions of this dataset are also available on Kaggle.
+We implemented:
+- **Classification**: An Artificial Neural Network (ANN), specifically a Feedforward Neural Network (FNN), to classify wines as red or white.
+- **Regression**: Traditional ML algorithms (Linear Regression, Random Forest, XGBoost, Gradient Boosting) and Deep Learning models to predict wine quality scores.
+
+## Dataset
+The dataset used in this project is based on the publicly available [Wine Quality dataset](https://archive.ics.uci.edu/ml/datasets/wine+quality) from the UCI Machine Learning Repository.  
+Some versions of this dataset are also available on Kaggle.
+
+## Methods
+- **Classification**: ANN/FNN architecture for red vs. white wine classification.
+- **Regression**: Linear Regression, Random Forest, XGBoost, Gradient Boosting, and Neural Networks for quality prediction.
+- **Evaluation Metrics**: Accuracy for classification; R² score for regression.
+
+## Results
+- **Classification**: High accuracy in distinguishing wine types (red/white).
+- **Regression**: Moderate R² scores across models, reflecting the difficulty of predicting subjective quality using only physicochemical data.
+
+## Insights
+- Deep Learning methods are highly effective for categorical classification tasks.
+- Regression approaches reveal the limitations of physicochemical properties alone for predicting subjective quality scores.
+- Future improvements could include additional sensory or consumer preference data.
+
+## How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/SangeethaSusan/Prediction-of-Wine-Type-and-Quality.git
+
+- pip install tensorflow scikit-learn pandas numpy matplotlib 
+- jupyter notebook "Prediction of Wine Type and Quality using Deep Learning.ipynb"
